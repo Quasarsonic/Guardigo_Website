@@ -34,11 +34,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+        navbar.style.background = 'var(--primary-color)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.background = 'var(--primary-color)';
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
 });
 
@@ -69,21 +69,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Contact form handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+// Email form handling
+const emailForm = document.querySelector('.email-form');
+if (emailForm) {
+    emailForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Get form data
-        const formData = new FormData(contactForm);
-        const name = contactForm.querySelector('input[type="text"]').value;
-        const email = contactForm.querySelector('input[type="email"]').value;
-        const message = contactForm.querySelector('textarea').value;
+        // Get email input
+        const emailInput = emailForm.querySelector('input[type="email"]');
+        const email = emailInput.value;
         
         // Basic validation
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
+        if (!email) {
+            alert('Please enter your email address.');
             return;
         }
         
@@ -93,16 +91,16 @@ if (contactForm) {
         }
         
         // Simulate form submission
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const submitBtn = emailForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         
-        submitBtn.textContent = 'Sending...';
+        submitBtn.textContent = 'Subscribing...';
         submitBtn.disabled = true;
         
         // Simulate API call
         setTimeout(() => {
-            alert('Thank you for your message! We\'ll get back to you soon.');
-            contactForm.reset();
+            alert('Thank you for subscribing! You\'ll receive our latest updates soon.');
+            emailForm.reset();
             submitBtn.textContent = originalText;
             submitBtn.disabled = false;
         }, 2000);
