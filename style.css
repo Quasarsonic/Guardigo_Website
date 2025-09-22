@@ -9,9 +9,9 @@
     --primary-color: #FFD700;
     --secondary-color: #1a1a1a;
     --accent-color: #ff6b6b;
-    --text-primary: #333333;
-    --text-secondary: #666666;
-    --text-light: #999999;
+    --text-primary: #1a1a1a;
+    --text-secondary: #2d2d2d;
+    --text-light: #4a4a4a;
     --background-light: #f8f9fa;
     --background-white: #ffffff;
     --border-color: #e1e5e9;
@@ -800,8 +800,8 @@ body {
 /* Download Section */
 .download {
     padding: 100px 0;
-    background: var(--text-primary);
-    color: var(--background-white);
+    background: var(--primary-color);
+    color: var(--text-primary);
     text-align: center;
 }
 
@@ -815,12 +815,12 @@ body {
 .download-content p {
     font-size: 1.3rem;
     margin-bottom: 3rem;
-    color: var(--text-light);
+    color: var(--text-primary);
     font-weight: 400;
 }
 
 .download-content p strong {
-    color: var(--background-white);
+    color: var(--text-primary);
     font-weight: 600;
 }
 
@@ -834,8 +834,8 @@ body {
 
 .download-btn {
     display: inline-block;
-    background: var(--background-white);
-    color: var(--text-primary);
+    background: var(--secondary-color);
+    color: var(--background-white);
     padding: 20px 30px;
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -867,7 +867,7 @@ body {
 .btn-title {
     display: block;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-light);
 }
 
 .btn-subtitle {
@@ -877,7 +877,7 @@ body {
 }
 
 .download-info p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 1rem;
 }
 

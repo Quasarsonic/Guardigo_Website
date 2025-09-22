@@ -109,6 +109,55 @@
         </div>
     </section>
 
+    <!-- Email Collection Section (restyled and aligned like Download Section) -->
+    <section id="contact" class="email-collection" style="background: var(--primary-color); color: var(--text-primary);">
+        <div class="container">
+            <div class="email-content" style="color: var(--text-primary); max-width: 600px; margin: 0 auto; text-align: center;">
+                <h2 style="color: var(--text-primary); margin-bottom: 12px;">Join the Waitlist for Early Access</h2>
+                <p style="margin-bottom: 0;">Connect with our community of travelers, sharing tips and protection.</p>
+                <form class="email-form" style="margin-top: 32px;">
+                    <div class="email-input-group" style="
+                        display: flex; 
+                        align-items: stretch; 
+                        max-width: 480px; 
+                        margin: 0 auto;
+                        background: #fff;
+                        border-radius: 12px;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                        padding: 6px 8px;
+                    ">
+                        <input 
+                            type="email" 
+                            placeholder="Enter your email address" 
+                            required 
+                            class="email-input-round"
+                            style="
+                                flex: 1; 
+                                border: none; 
+                                outline: none; 
+                                padding: 16px 18px; 
+                                border-radius: 8px 0 0 8px; 
+                                font-size: 1.08em;
+                                background: #fff;
+                                color: var(--text-primary);
+                            "
+                        >
+                        <button 
+                            type="submit" 
+                            class="btn email-btn-round"
+                            style="background: #1a1a1a; color: #FFD700;"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="email-disclaimer" style="color: var(--text-primary); margin-top: 16px; font-size: 0.97em; text-align: center;">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
@@ -298,87 +347,73 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download">
+<!-- Download Section -->
+    <section id="download" class="download" style="background: var(--primary-color); color: var(--text-primary);">
         <div class="container">
-            <div class="download-content">
-                <h2>Stay safe for good!</h2>
-                <p><strong>Download Guardigo and start your path towards a safer life!</strong></p>
+            <div class="download-content" style="color: var(--text-primary);">
+                <h2 style="color: var(--text-primary);">Download Now for iOS and Android</h2>
                 <div class="download-buttons">
-                    <a href="#" class="download-btn ios">
-                        <div class="btn-content">
-                            <div class="btn-icon">📱</div>
-                            <div class="btn-text">
-                                <span class="btn-title">Download for</span>
-                                <span class="btn-subtitle">iOS</span>
+                    <a href="#" class="download-btn ios" style="background: #fff; color: var(--primary-color); border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: inline-block; margin: 8px 8px 8px 0; padding: 8px 18px; min-width: 0; min-height: 0;">
+                        <div class="btn-content" style="display: flex; align-items: center; justify-content: center;">
+                            <div class="btn-icon" style="display: flex; align-items: center; justify-content: center; height: 64px; width: 120px;">
+                                <img src="assets/AppStore.svg" alt="Download on the App Store" width="120" height="40" style="display: block; margin: auto;" />
+                            </div>
+                            <div class="btn-text" style="color: var(--primary-color); margin-left: 16px;">
+                                <span class="btn-title" style="display: block; font-weight: 500;">Download for</span>
+                                <span class="btn-subtitle" style="display: block; font-size: 1.2em; font-weight: 700;">iOS</span>
                             </div>
                         </div>
                     </a>
-                    <a href="#" class="download-btn android">
-                        <div class="btn-content">
-                            <div class="btn-icon">🤖</div>
-                            <div class="btn-text">
-                                <span class="btn-title">Download for</span>
-                                <span class="btn-subtitle">Android</span>
+                    <a href="#" class="download-btn android" style="background: #fff; color: var(--primary-color); border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: inline-block; margin: 8px 0 8px 8px; padding: 8px 18px; min-width: 0; min-height: 0;">
+                        <div class="btn-content" style="display: flex; align-items: center; justify-content: center;">
+                            <div class="btn-icon" style="display: flex; align-items: center; justify-content: center; height: 64px; width: 120px;">
+                                <img src="assets/PlayStore.svg" alt="Get it on Google Play" width="120" height="40" style="display: block; margin: auto;" />
+                            </div>
+                            <div class="btn-text" style="color: var(--primary-color); margin-left: 16px;">
+                                <span class="btn-title" style="display: block; font-weight: 500;">Download for</span>
+                                <span class="btn-subtitle" style="display: block; font-size: 1.2em; font-weight: 700;">Android</span>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="download-info">
-                    <p>Free to download • No hidden fees • Privacy focused</p>
+                <div class="download-info" style="color: var(--text-primary);">
+                    <p>Community driven • Privacy focused</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Email Collection Section -->
-    <section id="contact" class="email-collection">
-        <div class="container">
-            <div class="email-content">
-                <h2>Stay Updated</h2>
-                <p>Get the latest safety tips and app updates delivered to your inbox</p>
-                <form class="email-form">
-                    <div class="email-input-group">
-                        <input type="email" placeholder="Enter your email address" required>
-                        <button type="submit" class="btn btn-primary">Subscribe</button>
-                    </div>
-                    <p class="email-disclaimer">We respect your privacy. Unsubscribe at any time.</p>
-                </form>
-            </div>
-        </div>
+        </div>    
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="color: #fff;">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h3>Guardigo</h3>
-                    <p>Your personal security companion</p>
+                    <h3 style="color: #FFD600;">Guardigo</h3>
+                    <p style="color: #fff;">Your personal travel companion</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#download">Download</a>
-                        <a href="#">Pricing</a>
+                        <h4 style="color: #fff;">Product</h4>
+                        <a href="#features" style="color: #dbdbdb;">Features</a>
+                        <a href="#download" style="color: #dbdbdb;">Download</a>
+                        <a href="#" style="color: #dbdbdb;">Pricing</a>
                     </div>
                     <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="#contact">Contact</a>
-                        <a href="#">Help Center</a>
-                        <a href="#">Privacy Policy</a>
+                        <h4 style="color: #fff;">Support</h4>
+                        <a href="#contact" style="color: #dbdbdb;">Contact</a>
+                        <a href="#" style="color: #dbdbdb;">Help Center</a>
+                        <a href="#" style="color: #dbdbdb;">Privacy Policy</a>
                     </div>
                     <div class="footer-column">
-                        <h4>Company</h4>
-                        <a href="#about">About</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Careers</a>
+                        <h4 style="color: #fff;">Company</h4>
+                        <a href="#about" style="color: #dbdbdb;">About</a>
+                        <a href="#" style="color: #dbdbdb;">Blog</a>
+                        <a href="#" style="color: #dbdbdb;">Careers</a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Guardigo. Protecting travelers worldwide.</p>
+                <p style="color: #dbdbdb;">&copy; 2025 <span style="color: #FFD600;">Guardigo</span>. Protecting travelers worldwide.</p>
             </div>
         </div>
     </footer>
