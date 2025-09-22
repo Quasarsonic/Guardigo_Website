@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #FFD700;
+    --primary-color: #ffd000;
     --secondary-color: #1a1a1a;
     --accent-color: #ff6b6b;
     --text-primary: #1a1a1a;
@@ -37,18 +37,17 @@ body {
 
 /* Header Navigation */
 .header-nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     background: transparent;
     z-index: 1000;
-    transition: var(--transition);
 }
 
 .header-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +86,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #FFD700;
+    background: #ffd000;
     transition: var(--transition);
 }
 
@@ -96,7 +95,7 @@ body {
 }
 
 .download-link {
-    background: #FFD700;
+    background: #ffd000;
     color: #1a1a1a !important;
     padding: 8px 16px;
     border-radius: 8px;
@@ -116,7 +115,7 @@ body {
 /* Desktop Download Button */
 .desktop-download-btn {
     display: inline-block;
-    background: #FFD700;
+    background: #ffd000;
     color: #1a1a1a !important;
     padding: 8px 16px;
     border-radius: 8px;
@@ -133,7 +132,7 @@ body {
 /* Mobile Download Button */
 .mobile-download-btn {
     display: none;
-    background: #FFD700;
+    background: #ffd000;
     color: #1a1a1a !important;
     padding: 8px 16px;
     border-radius: 8px;
@@ -204,7 +203,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.35;
+    opacity: 0.4;
     z-index: 0;
     pointer-events: none;
     /* Radial transparency at margins */
@@ -318,9 +317,9 @@ body {
 }
 
 .btn-primary {
-    background: #FFD700;
+    background: #ffd000;
     color: #1a1a1a;
-    border-color: #FFD700;
+    border-color: #ffd000;
     font-weight: 700;
 }
 
@@ -395,7 +394,7 @@ body {
 
 .card-icon {
     font-size: 1.2rem;
-    color: #FFD700;
+    color: #ffd000;
 }
 
 .card-text {
@@ -726,14 +725,14 @@ body {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-medium);
-    border-color: #FFD700;
+    border-color: #ffd000;
 }
 
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     display: block;
-    color: #FFD700;
+    color: #ffd000;
 }
 
 .feature-card h3 {
@@ -778,7 +777,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     display: block;
-    color: #FFD700;
+    color: #ffd000;
 }
 
 .stat-number {
@@ -825,7 +824,7 @@ body {
 }
 
 .testimonial-card {
-    background: var(--background-white);
+    background: var(--secondary-color);
     border-radius: 16px;
     padding: 2rem;
     box-shadow: var(--shadow-light);
@@ -842,11 +841,11 @@ body {
     font-size: 1.3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    color: var(--primary-color);
 }
 
 .testimonial-content p {
-    color: var(--text-secondary);
+    color: var(--background-white);
     line-height: 1.6;
     margin-bottom: 1.5rem;
     font-size: 1rem;
@@ -864,7 +863,7 @@ body {
 
 .author-name {
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--background-white);
     margin-bottom: 0.25rem;
 }
 
@@ -933,7 +932,7 @@ body {
 
 .btn-icon {
     font-size: 2rem;
-    color: #FFD700;
+    color: #ffd000;
 }
 
 .btn-text {
@@ -1375,15 +1374,15 @@ body {
     }
     
     .download-btn .btn-icon {
-        width: 120px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .download-btn .btn-icon img {
-        height: 40px;
+        height: 100px;
         width: auto;
     }
     
@@ -1422,10 +1421,6 @@ body {
         gap: 12px;
     }
 
-    .download-btn .btn-icon {
-        width: 64px;
-        height: 64px;
-    }
 
     .download-btn .btn-text {
         text-align: left;
@@ -1521,7 +1516,7 @@ body {
     
     .feature-icon {
         font-size: 2rem;
-        color: #FFD700;
+        color: #ffd000;
     }
     
     .feature-card h3 {
@@ -1550,7 +1545,7 @@ body {
     
     .btn-icon {
         font-size: 1.5rem;
-        color: #FFD700;
+        color: #ffd000;
     }
     
     .btn-text {
@@ -1600,11 +1595,11 @@ body {
     }
 
     .download .btn-icon {
-        width: 140px !important;
-        height: 72px !important;
+        width: 160px !important;
+        height: 80px !important;
     }
     .download .btn-icon img {
-        height: 72px !important;
+        height: 80px !important;
         width: auto;
     }
 }
