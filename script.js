@@ -1,11 +1,15 @@
 // Mobile Navigation Toggle
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const headerLinks = document.querySelector('.header-links');
+const headerNav = document.querySelector('.header-nav');
 
 if (mobileMenuToggle && headerLinks) {
     mobileMenuToggle.addEventListener('click', () => {
         headerLinks.classList.toggle('active');
         mobileMenuToggle.classList.toggle('active');
+        if (headerNav) headerNav.classList.toggle('solid', headerLinks.classList.contains('active'));
+        // lock body scroll when menu is open
+        document.body.style.overflow = headerLinks.classList.contains('active') ? 'hidden' : '';
     });
 
     // Close mobile menu when clicking on a link
@@ -13,6 +17,8 @@ if (mobileMenuToggle && headerLinks) {
         link.addEventListener('click', () => {
             headerLinks.classList.remove('active');
             mobileMenuToggle.classList.remove('active');
+            if (headerNav) headerNav.classList.remove('solid');
+            document.body.style.overflow = '';
         });
     });
 }
@@ -23,6 +29,8 @@ document.addEventListener('click', (e) => {
         if (!mobileMenuToggle.contains(e.target) && !headerLinks.contains(e.target)) {
             headerLinks.classList.remove('active');
             mobileMenuToggle.classList.remove('active');
+            if (headerNav) headerNav.classList.remove('solid');
+            document.body.style.overflow = '';
         }
     }
 });
@@ -220,6 +228,8 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         if (headerLinks) headerLinks.classList.remove('active');
         if (mobileMenuToggle) mobileMenuToggle.classList.remove('active');
+        if (headerNav) headerNav.classList.remove('solid');
+        document.body.style.overflow = '';
     }
 });
 
