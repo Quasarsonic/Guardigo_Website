@@ -1619,6 +1619,45 @@ body {
     }
 }
 
+/* Legal Page Styles */
+.legal-toc {
+    background: var(--secondary-color) !important;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.legal-toc h2 {
+    color: var(--background-white) !important;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.toc-links {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+}
+
+.toc-link {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid #333 !important;
+    transition: var(--transition) !important;
+    display: block !important;
+}
+
+.toc-link:hover {
+    color: #FFF59D !important;
+    border-bottom-color: var(--primary-color) !important;
+}
+
+.toc-link:last-child {
+    border-bottom: none !important;
+}
+
 /* Tablet and Desktop: enlarge store badge icons in Download section */
 @media (min-width: 768px) {
     /* Subtle float animation for download containers on tablet/desktop */
