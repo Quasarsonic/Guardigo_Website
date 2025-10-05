@@ -1658,6 +1658,50 @@ body {
     border-bottom: none !important;
 }
 
+/* Legal Content Centering - Web View Only */
+@media (min-width: 1024px) {
+    .legal-content-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    .legal-section {
+        text-align: center;
+    }
+    
+    .legal-section h2 {
+        text-align: center !important;
+    }
+    
+    .legal-text {
+        text-align: center !important;
+    }
+    
+    .legal-text h3 {
+        text-align: center !important;
+    }
+    
+    .legal-text p {
+        text-align: center !important;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .legal-text ul {
+        text-align: left;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+    
+    .legal-text li {
+        text-align: left;
+    }
+}
+
 /* Tablet and Desktop: enlarge store badge icons in Download section */
 @media (min-width: 768px) {
     /* Subtle float animation for download containers on tablet/desktop */
